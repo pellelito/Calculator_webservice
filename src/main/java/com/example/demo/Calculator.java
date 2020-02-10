@@ -24,35 +24,35 @@ public class Calculator {
 //using get method and hello-world as URI  
 	@RequestMapping(method = RequestMethod.GET, path = "/add")
 	public String addNumbers(String num1, String num2) throws IOException {
-		float answer = Integer.parseInt(num1) + Integer.parseInt(num2);
+		float answer = Float.parseFloat(num1) + Float.parseFloat(num2);
 		String time = getTime();
 		String ipAdress = checkIP();
-		return "Your answer is: "+  answer + "<br>and the time is: " + time + "<br>and your IP is: " + ipAdress;
+		return "Your answer is: "+  answer + "<br>and the time is: " + time + "<br>and your IP is: " + ipAdress + "<br><br><h1>You can run but you can't hide</h1>";
 	} 
 
 	@RequestMapping(value = "/sub", method = RequestMethod.GET)
 	public String subNumbers(String num1, String num2) throws IOException {
-		float answer = Integer.parseInt(num1) - Integer.parseInt(num2);
+		float answer = Float.parseFloat(num1) - Float.parseFloat(num2);
 		String time = getTime();
 		String ipAdress = checkIP();
-		return "Your answer is: "+  answer + "<br>and the time is: " + time + "<br>and your IP is: " + ipAdress;
+		return "Your answer is: "+  answer + "<br>and the time is: " + time + "<br>and your IP is: " + ipAdress + "<br><br><h1>You can run but you can't hide</h1>";
 	}
 	@RequestMapping(value = "/div", method = RequestMethod.GET)
 	
 	public String divNumbers(String	 num1, String num2) throws IOException {
-		float answer = Integer.parseInt(num1) / Integer.parseInt(num2);
+		float answer = Float.parseFloat(num1) / Float.parseFloat(num2);
 		
 		String time = getTime();
 		String ipAdress = checkIP();				
-		return "Your answer is: "+  answer + "<br>and the time is: " + time + "<br>and your IP is: " + ipAdress;
+		return "Your answer is: "+  answer + "<br>and the time is: " + time + "<br>and your IP is: " + ipAdress + "<br><br><h1>You can run but you can't hide</h1>";
 	}
 	
 	@RequestMapping(value = "/mul", method = RequestMethod.GET)
 	public String mulNumbers(String num1, String num2) throws IOException {
-		float answer = Integer.parseInt(num1) * Integer.parseInt(num2);
+		float answer = Float.parseFloat(num1) * Float.parseFloat(num2);
 		String time = getTime();
 		String ipAdress = checkIP();
-		return "Your answer is: "+  answer + "<br>and the time is: " + time + "<br>and your IP is: " + ipAdress;
+		return "Your answer is: "+  answer + "<br>and the time is: " + time + "<br>and your IP is: " + ipAdress + "<br><br><h1>You can run but you can't hide</h1>";
 	}
 	
 	@RequestMapping(value = "/time", method = RequestMethod.GET)
